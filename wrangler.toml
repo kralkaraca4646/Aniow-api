@@ -1,0 +1,14 @@
+name = "aniow-api"
+main = "src/index.js"
+compatibility_date = "2026-08-25"
+
+# D1 veritabanı bağlantısı
+# `wrangler d1 create aniow-db` komutunu çalıştırdıktan sonra
+# çıkan database_id'yi aşağıya yapıştır
+[[d1_databases]]
+binding = "DB"
+database_name = "aniow-db"
+database_id = "BURAYA_D1_DATABASE_ID_YAPISTIR"
+
+# JWT imzalama anahtarı (secret olarak ayarlanacak, buraya yazma)
+# Terminal: wrangler secret put JWT_SECRET
